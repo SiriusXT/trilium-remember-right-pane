@@ -113,7 +113,7 @@ class RememberRightPane extends api.NoteContextAwareWidget {
                 toogleTocLabel();
             });
             $('.note-split.type-text:not(.hidden-ext) .ribbon-button-container').append(tocB);
-            currentNoteThis.refresh();
+            // currentNoteThis.refresh(); //I can't remember why this line is there.
         }
 
         if ($('.note-split.type-text:not(.hidden-ext)  .ribbon-button-container .unfold-hll').length == 0) {
@@ -121,7 +121,7 @@ class RememberRightPane extends api.NoteContextAwareWidget {
                 toogleHllLabel();
             });
             $('.note-split.type-text:not(.hidden-ext) .ribbon-button-container').append(hllB);
-            currentNoteThis.refresh();
+            // currentNoteThis.refresh(); //I can't remember why this line is there.
         }
 
 
@@ -133,7 +133,7 @@ class RememberRightPane extends api.NoteContextAwareWidget {
                 var targetElements = $('#right-pane .button-widget.bx.component.icon-action.bx-x');
                 if (targetElements.length > 0) {
                     if (!isBound) {
-                        currentNoteThis.refresh();
+                        // currentNoteThis.refresh(); //I can't remember why this line is there.
                         $(targetElements[0]).on('click', function () {
                             setTocLabel("hide");
                         });
