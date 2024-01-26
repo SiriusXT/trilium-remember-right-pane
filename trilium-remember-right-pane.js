@@ -77,7 +77,7 @@ class RememberRightPane extends api.NoteContextAwareWidget {
     }
 
     async refreshWithNote(note) {
-        console.log("trilium-remember-right-pane");
+        //console.log("trilium-remember-right-pane");
         if (this.note.type == 'text') {
             if (this.noteContext.viewScope.tocPreviousVisible == true || this.noteContext.viewScope.tocPreviousVisible == undefined) {
                 if (this.noteContext.viewScope.tocTemporarilyHidden == true || (note.hasLabel("toc") && note.getLabel("toc").value == "hide")) {//when already hidden
